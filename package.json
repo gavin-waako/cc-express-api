@@ -1,0 +1,30 @@
+{
+  "name": "cc-express-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gavin-waako/cc-express-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/gavin-waako/cc-express-api/issues"
+  },
+  "homepage": "https://github.com/gavin-waako/cc-express-api#readme",
+  "dependencies": {
+    "expres": "^0.0.5",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.2.3"
+  }
+}
