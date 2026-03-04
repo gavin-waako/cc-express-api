@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Find a Rep | Congress Connect</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="senate.html">Senate</a>
+      <a href="house.html">House of Representatives</a>
+      <a href="search.html">Find a Rep</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <header class="splash">
+      <div class="overlay">
+        <h1>Find Your Representative</h1>
+        <p>Search and manage the Congress database</p>
+      </div>
+    </header>
+
+    <main class="content-area">
+      <h1>Search for Representatives</h1>
+
+      <div class="search-form">
+        <div class="form-group">
+          <label for="first_name">First Name:</label>
+          <input type="text" id="first_name" placeholder="e.g., John" />
+        </div>
+
+        <div class="form-group">
+          <label for="last_name">Last Name:</label>
+          <input type="text" id="last_name" placeholder="e.g., Smith" />
+        </div>
+
+        <div class="form-group">
+          <label for="filter_state">State:</label>
+          <input
+            type="text"
+            id="filter_state"
+            placeholder="e.g., WA"
+            maxlength="2"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="filter_party">Party:</label>
+          <select id="filter_party">
+            <option value="">Any</option>
+            <option value="Democrat">Democrat</option>
+            <option value="Republican">Republican</option>
+            <option value="Independent">Independent</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="sortby">Sort By:</label>
+          <select id="sortby">
+            <option value="">None</option>
+            <option value="last">Last Name</option>
+            <option value="birthday">Birthday</option>
+            <option value="party">Party</option>
+            <option value="type">Chamber</option>
+            <option value="state">State</option>
+          </select>
+        </div>
+
+        <button type="button" id="search-btn">Search</button>
+      </div>
+
+      <h2>Search Results</h2>
+      <table class="results-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>State</th>
+            <th>Party</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="results-body"></tbody>
+      </table>
+
+      <hr />
+
+      <h1>Add a New Politician</h1>
+      <div class="search-form" id="add-form">
+        <div class="form-group">
+          <label for="new-bioguide">Bioguide ID:</label>
+          <input type="text" id="new-bioguide" placeholder="e.g., W000817" />
+        </div>
+        <div class="form-group">
+          <label for="new-first">First Name:</label>
+          <input type="text" id="new-first" />
+        </div>
+        <div class="form-group">
+          <label for="new-last">Last Name:</label>
+          <input type="text" id="new-last" />
+        </div>
+        <div class="form-group">
+          <label for="new-state">State (e.g., WA):</label>
+          <input type="text" id="new-state" maxlength="2" />
+        </div>
+        <div class="form-group">
+          <label for="new-type">Chamber:</label>
+          <select id="new-type">
+            <option value="rep">House</option>
+            <option value="sen">Senate</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="new-party">Party:</label>
+          <select id="new-party">
+            <option value="Democrat">Democrat</option>
+            <option value="Republican">Republican</option>
+            <option value="Independent">Independent</option>
+          </select>
+        </div>
+        <button type="button" id="create-btn">Create Politician</button>
+      </div>
+    </main>
+
+    <script src="js/client.js"></script>
+  </body>
+</html>

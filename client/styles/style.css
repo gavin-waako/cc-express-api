@@ -1,0 +1,291 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+.navbar {
+  background-color: #002868;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #bf0a30;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.splash h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.content-area {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  border-left: 5px solid #002868;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+input,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #002868;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+button:hover {
+  background-color: #bf0a30;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.results-table th,
+.results-table td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.results-table th {
+  background-color: #eee;
+  color: #333;
+}
+
+.results-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.results-table button {
+  background-color: #d9534f;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+}
+
+.results-table button:hover {
+  background-color: #c9302c;
+}
+
+@media (max-width: 600px) {
+  .splash h1 {
+    font-size: 2rem;
+  }
+  .navbar {
+    flex-wrap: wrap;
+  }
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+.navbar {
+  background-color: #002868;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #bf0a30; /* Patriotic Red */
+}
+
+.splash {
+  position: relative;
+  background: url("../images/congress-building.jpg") no-repeat center
+    center/cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.splash h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.content-area {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  border-left: 5px solid #002868;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+input,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #002868;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+button:hover {
+  background-color: #bf0a30;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.results-table th,
+.results-table td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.results-table th {
+  background-color: #eee;
+  color: #333;
+}
+
+.results-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.results-table button {
+  background-color: #d9534f;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+}
+
+.results-table button:hover {
+  background-color: #c9302c;
+}
+
+@media (max-width: 600px) {
+  .splash h1 {
+    font-size: 2rem;
+  }
+  .navbar {
+    flex-wrap: wrap;
+  }
+}

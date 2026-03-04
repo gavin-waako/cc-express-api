@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="styles/style.css" />
     <favicon rel="icon" type="image/png" href="/images/favicon.png" />
-    <title>Home | Congress Connect</title>
+    <title>Contact | Congress Connect</title>
   </head>
   <body>
     <nav class="navbar">
@@ -17,16 +17,27 @@
 
     <header class="splash">
       <div class="overlay">
-        <h1>Congress Connect</h1>
-        <p>Connecting You to Your Representatives</p>
+        <h1>Contact Us</h1>
+        <p>Get in Touch with Congress Connect</p>
       </div>
     </header>
 
     <main class="content-area">
-      <h1>Welcome to Congress Connect</h1>
-      <p>
-        Your gateway to understanding and engaging with the 119th U.S. Congress.
-      </p>
+      <h1>Contact</h1>
+      <p>Have questions or feedback? We'd love to hear from you.</p>
+
+      <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
     </main>
     <script src="js/client.js"></script>
   </body>

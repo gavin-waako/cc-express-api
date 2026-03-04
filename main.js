@@ -5,6 +5,8 @@ let app = express();
 
 app.use(express.json());
 
+app.use(express.static("client"));
+
 app.use("/", router);
 
 let PORT = 1234;
